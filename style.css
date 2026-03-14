@@ -1,0 +1,493 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: 'Garamond' , serif;
+}
+ul ,a {
+    list-style: none;
+    text-decoration:none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    padding: 0px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background: transparent;
+    backdrop-filter: blur(30px);
+}
+.logo {
+    margin-left: 30px;
+    font-size: 20px;
+    filter: brightness(0.99);
+}
+.navbar ul {
+    display: flex;
+    margin-right: 50px;
+}
+.navbar a {
+    color: gold;
+    font-size: 30px;
+    margin-left: 35px;
+    transition: all 0.4s ease;
+}
+.navbar a:hover {
+    color: white ; 
+}
+.homepage {
+    position: relative;
+    width: 100% ; 
+    height: 100vh;
+}
+.homepage img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    position:absolute;
+    filter: brightness(0.6);
+}
+.homepage .home {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    color: white;
+}
+.homepage .home .firstlogo-container {
+    position: absolute;
+    width: 350px;
+    margin-bottom: 30px;
+    top: 250px;
+}
+.homepage .home .firstlogo-container img {
+   height: auto;
+   width: 100%;
+   object-fit: contain;
+   filter: brightness(0.99);
+}
+.homepage .home p{
+    position: absolute;
+    font-size: 50px;
+    margin-bottom: 40px;
+    top: 150px;
+}
+.homepage .home span {
+    color: #0de2ea;
+    font-weight: bold;
+}
+.museum-location{
+    position: relative; 
+    padding: 20px;
+    width: 1200px;
+    margin: auto;
+}
+h2.text {
+    position: absolute ;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 10px;
+    color: rgb(164, 48, 48);
+    animation: slideFromLeft 1s ease forwards;
+}
+.content30 {
+    display: flex;
+}
+.info {
+    font-size: 18px;
+    color: brown;
+    line-height: 1.9;
+    margin-top: 75px;
+    margin-right: 60px;
+}
+.photo100 {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    height: 340px;
+    animation: fancyBorder 5s infinite alternate;
+}
+.photo100 img {
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0 , 0 , 0 , 0.2);
+}
+.museumsections-map{
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto ;
+}
+h2.text200 {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(164, 48, 48);
+    margin-top: 20px;
+    animation: slideFromLeft 1s ease forwards;
+}
+.content50 {
+    display: flex;
+}
+.photo300 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    margin-right: 60px;
+    right: 120px;
+    animation: fancyBorder 5s infinite alternate;
+}
+.info100 {
+    position: absolute;
+    font-size: 18px;
+    color: brown ; 
+    line-height: 1.9;
+    margin-top: 10px;
+    left: 370px;
+}
+.address {
+    width: 100%;
+    text-align: center;
+}
+.address_content {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin-top: 30px;
+    padding: 30px 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    animation: fancyBorder 5s infinite;
+}
+@keyframes fancyBorder {
+    0% {
+        border: 2px solid #ffd700;
+        box-shadow: 0 0 5px #ffd700;
+    }
+    25% {
+        border: 2px solid #ffd800;
+        box-shadow: 0 0 10px #ffd800;
+    }
+    50% {
+        border: 2px solid #ffd450;
+        box-shadow: 0 0 15px #ffd450;
+    }
+    75% {
+        border: 2px solid #dc143c;
+        box-shadow: 0 0 10px #dc143c;
+    }
+    100% {
+        border: 2px solid #ffd700;
+        box-shadow: 0 0 5px #ffd700;
+    }
+}
+.address_content .background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    margin: 0px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+.address_content h3 {
+    font-size: 25px;
+    color:yellow;
+     opacity: 0.8;
+    filter: blur(0.5px); 
+    border: 1px solid transparent;
+    width: 25%;
+    margin-left: 520px; 
+}
+.address_content h4 {
+    font-size: 30px;
+    color: white;
+    border: 1px solid transparent;
+    width: 25%;
+    margin-left: 520px;
+}
+.address_content .address2 {
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+    border: 1px solid transparent;
+    width: 25%;
+    margin-left: 520px;
+}
+@keyframes slideFromLeft {
+    0% {
+        transform: translatex(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.museum_logo {
+    position: relative;
+    width:100%;
+    display: flex;
+}
+.logo-header {
+    position: absolute;
+    top: 45px;
+    margin-left: 45%;
+}
+.background-image2 {
+     width: 100%;
+     height: 200px;
+     border-radius: 20px;
+     object-fit: cover;
+     margin-bottom: 20px;
+     z-index: -1;
+     filter: brightness(0.4);
+     animation: fancyBorder 3s infinite alternate;
+}
+.trans-section{
+    width: 100%;
+    text-align: center;
+}
+h2.head2 {
+    font-size: 50px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: 0px 150px;
+    color: black;
+    animation: slideFromLeft 1s ease forwards;
+}
+.cards {
+    display: flex ;
+    justify-content: space-around ; 
+}
+.card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.95) ;
+    text-align: center;
+    width: 350px;
+    margin: 50px 0px 50px 5px;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    background: cover;
+    margin: 20px 0px;
+    border-radius:10px;
+    animation: fancyBorder 3s infinite alternate;
+}
+.card img.image10 {
+    height: 195px;
+}
+.title {
+    font-size: 32px;
+    color: #f7931e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.cards .stars-container {
+  display: flex;
+  gap: 3px;
+  color: gold;
+  margin-left: 125px; 
+}
+.stars-container .far {
+   color: lightgray;
+}
+.descripe {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+.card .span2 {
+    color: orange;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0 ;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.metro-section {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    width: 90%;
+    margin-top: 10px ;
+    margin-bottom: 25px ;
+    margin-left: 80px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.95);
+}
+.metro-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.metro-image img , .metro-map img  {
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    margin-top: 10px;
+    animation: fancyBorder3 4s infinite;
+    transition: all 0.3s ease;
+}
+.metro-map img:hover {
+    transform: scale(0.9);
+}
+.metro-image img:hover {
+    transform: scale(0.9);
+}
+@keyframes fancyBorder3 {
+    0% {
+        border: 0px solid green;
+        box-shadow: 0 0 5px blue;
+    }
+    50% {
+        border: 0px dotted green;
+        box-shadow: 0 0 15px green;
+    }
+    100% {
+        border: 0px solid blue;
+        box-shadow: 0 0 5px blue;
+    }
+}
+.metro-description {
+    margin-left: 15px;
+    font-weight: bold;
+}
+.metro-description h2 {
+     margin-bottom: 10px;
+     font-size: 30px;
+     color: rgb(1, 1, 152);
+}
+.metro-description .parag {
+    font-size: 20px;
+    color: black;
+}
+.metro-span {
+    color: blue;
+    transition: all 0.2s ease ;
+}
+.container700 {
+    padding-top: 15px;
+    text-align: center;
+}
+button {
+    padding: 10px 20px ;
+    background: rgb(255, 242, 170) ;
+    color: black;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+} 
+body.dark-mode {
+    background-color: #b8a3a3;
+    color: #dc3535;
+}
+footer {
+    background: linear-gradient(to top  , rgb(255, 242, 170) , aliceblue    ) ; 
+} 
+.footercontainer {
+    width: 100%;
+    padding: 5px;
+} 
+.social {
+    justify-content: center;
+    display: flex;
+}  
+.social a {
+    padding: 10px;
+    margin: 20px 10px;
+    background-color: white;
+    border-radius: 30%;
+    transition: all 0.2s ease;
+} 
+.social a i {
+    font-size: 30px;
+    color: black;
+} 
+.social a:hover {
+    color: white;
+    background-color: rgb(255, 255, 64);
+    transform: scale(1.2);
+} 
+.bottom {
+    display: flex;
+    text-align: center;
+    justify-content: center;  
+    font-size: 20px;
+}
+.bottom p {
+    color: white;
+    margin-top: 15px;
+}
+.copyrights {
+    color: black;
+}
+.footer1 {
+    background: rgb(249, 221, 169);
+    height: 50px;
+}
+/*Java script*/
+.container700 {
+   padding-top:10px ;
+    text-align: center;
+    width: 100%;
+}
+button {
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+body.dark-mode {
+background-color:black ;
+color: blue;
+}
+/*footer*/
+.footer-items ul , .footer-items1 ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 35px;
+} 
+.footer-items a , .footer-items1 a {
+    color: black;
+    font-size: 20px;
+    transition: all 0.2s ease ; 
+}
+.footer-items a:hover , .footer-items1 a:hover {
+    color: #ffd700;
+    padding-left: 15px;
+}
